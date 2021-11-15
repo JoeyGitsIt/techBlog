@@ -20,13 +20,10 @@ Post.init(
       allowNull: false,
     },
     // NEED: go find out the date format and how to auto-create this information in sequelize (should be like date something in the documentation)
-    // time: {
-    //   type: DataTypes.DECIMAL,
-    //   allowNull: false,
-    //   validate: {
-    //     isDecimal: true,
-    //   },
-    // },
+    time: {
+      type: DataTypes.DATEONLY,
+      allowNull: false,
+    },
   },
   {
     sequelize,
